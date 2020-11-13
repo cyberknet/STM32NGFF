@@ -8,7 +8,7 @@ Title "STM32NGFF Breakout Board"
 Date "2020-11-12"
 Rev "0.1"
 Comp "Open Source Hardware, GNU GPL v3.0 Or Later"
-Comment1 ""
+Comment1 "https://github.com/cyberknet/STM32NGFF"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -713,7 +713,7 @@ U 1 1 5FF008D4
 P 1375 2450
 F 0 "PSW1" H 1375 2735 50  0000 C CNN
 F 1 "TS-1145A-C-B" H 1375 2525 50  0000 C CNN
-F 2 "" H 1375 2325 50  0000 C CNN
+F 2 "" H 1375 2325 50  0001 C CNN
 F 3 "~" H 1375 2450 50  0001 C CNN
 	1    1375 2450
 	1    0    0    -1  
