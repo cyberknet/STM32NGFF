@@ -6,8 +6,8 @@ encoding utf-8
 Sheet 1 1
 Title "STM32NGFF Breakout Board"
 Date "2020-11-12"
-Rev "RevA"
-Comp "Open Source Hardware, GNU GPL v3.0 Or Later"
+Rev "0.1"
+Comp "CERN Open Hardware License - Strongly Reciprocal V2"
 Comment1 "Latest version at https://github.com/cyberknet/STM32NGFF"
 Comment2 ""
 Comment3 "Join us on Discord at https://discord.gg/E6ujkUG"
@@ -70,10 +70,6 @@ F 3 "" H 1700 2225 50  0001 C CNN
 	1    1700 2225
 	1    0    0    -1  
 $EndComp
-Text GLabel 3900 4850 2    50   Input ~ 0
-USB_D+
-Text GLabel 3900 4750 2    50   Input ~ 0
-USB_D-
 Text Notes 600  4125 0    50   ~ 0
 Cload = 2 * (CL - Cstray)
 $Comp
@@ -202,144 +198,136 @@ Wire Wire Line
 $Comp
 L Device:L_Small L1
 U 1 1 5FF2CDC5
-P 6975 1225
-F 0 "L1" V 7050 1225 50  0000 C CNN
-F 1 "39n" V 6925 1225 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 6975 1225 50  0001 C CNN
-F 3 "~" H 6975 1225 50  0001 C CNN
-	1    6975 1225
+P 7325 1225
+F 0 "L1" V 7400 1225 50  0000 C CNN
+F 1 "39n" V 7275 1225 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 7325 1225 50  0001 C CNN
+F 3 "~" H 7325 1225 50  0001 C CNN
+	1    7325 1225
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3.3V #PWR024
 U 1 1 5FF2D5B4
-P 6825 1175
-F 0 "#PWR024" H 6825 1025 50  0001 C CNN
-F 1 "+3.3V" H 6840 1348 50  0000 C CNN
-F 2 "" H 6825 1175 50  0001 C CNN
-F 3 "" H 6825 1175 50  0001 C CNN
-	1    6825 1175
+P 7175 1175
+F 0 "#PWR024" H 7175 1025 50  0001 C CNN
+F 1 "+3.3V" H 7190 1348 50  0000 C CNN
+F 2 "" H 7175 1175 50  0001 C CNN
+F 3 "" H 7175 1175 50  0001 C CNN
+	1    7175 1175
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6825 1175 6825 1225
+	7175 1175 7175 1225
 Wire Wire Line
-	6825 1225 6875 1225
+	7175 1225 7225 1225
 $Comp
 L Device:C_Small C11
 U 1 1 5FF2F1CA
-P 7125 1375
-F 0 "C11" H 7217 1421 50  0000 L CNN
-F 1 "1u" H 7217 1330 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7125 1375 50  0001 C CNN
-F 3 "~" H 7125 1375 50  0001 C CNN
-	1    7125 1375
+P 7475 1375
+F 0 "C11" H 7567 1421 50  0000 L CNN
+F 1 "1u" H 7567 1330 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7475 1375 50  0001 C CNN
+F 3 "~" H 7475 1375 50  0001 C CNN
+	1    7475 1375
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C12
 U 1 1 5FF2F737
-P 7375 1375
-F 0 "C12" H 7467 1421 50  0000 L CNN
-F 1 "10n" H 7467 1330 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7375 1375 50  0001 C CNN
-F 3 "~" H 7375 1375 50  0001 C CNN
-	1    7375 1375
+P 7725 1375
+F 0 "C12" H 7817 1421 50  0000 L CNN
+F 1 "10n" H 7817 1330 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7725 1375 50  0001 C CNN
+F 3 "~" H 7725 1375 50  0001 C CNN
+	1    7725 1375
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR026
 U 1 1 5FF313CD
-P 7125 1575
-F 0 "#PWR026" H 7125 1325 50  0001 C CNN
-F 1 "GND" H 7130 1402 50  0000 C CNN
-F 2 "" H 7125 1575 50  0001 C CNN
-F 3 "" H 7125 1575 50  0001 C CNN
-	1    7125 1575
+P 7475 1575
+F 0 "#PWR026" H 7475 1325 50  0001 C CNN
+F 1 "GND" H 7480 1402 50  0000 C CNN
+F 2 "" H 7475 1575 50  0001 C CNN
+F 3 "" H 7475 1575 50  0001 C CNN
+	1    7475 1575
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7375 1225 7375 1275
+	7725 1225 7725 1275
 Wire Wire Line
-	7125 1275 7125 1225
-Connection ~ 7125 1225
+	7475 1275 7475 1225
+Connection ~ 7475 1225
 Wire Wire Line
-	7125 1225 7375 1225
+	7475 1225 7725 1225
 Wire Wire Line
-	7125 1475 7125 1525
+	7475 1475 7475 1525
 Wire Wire Line
-	7375 1475 7375 1525
+	7725 1475 7725 1525
 Wire Wire Line
-	7375 1525 7125 1525
-Connection ~ 7125 1525
+	7725 1525 7475 1525
+Connection ~ 7475 1525
 Wire Wire Line
-	7125 1525 7125 1575
+	7475 1525 7475 1575
 $Comp
 L power:+3.3VA #PWR029
 U 1 1 5FF36DB6
-P 7375 1175
-F 0 "#PWR029" H 7375 1025 50  0001 C CNN
-F 1 "+3.3VA" H 7390 1348 50  0000 C CNN
-F 2 "" H 7375 1175 50  0001 C CNN
-F 3 "" H 7375 1175 50  0001 C CNN
-	1    7375 1175
+P 7725 1175
+F 0 "#PWR029" H 7725 1025 50  0001 C CNN
+F 1 "+3.3VA" H 7740 1348 50  0000 C CNN
+F 2 "" H 7725 1175 50  0001 C CNN
+F 3 "" H 7725 1175 50  0001 C CNN
+	1    7725 1175
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7375 1225 7375 1175
-Connection ~ 7375 1225
+	7725 1225 7725 1175
+Connection ~ 7725 1225
 Wire Wire Line
-	7075 1225 7125 1225
+	7425 1225 7475 1225
 $Comp
 L Device:LED_Small D2
 U 1 1 5FFA3B6D
-P 1225 4750
-F 0 "D2" V 1271 4680 50  0000 R CNN
-F 1 "GREEN" V 1180 4680 50  0000 R CNN
-F 2 "LED_SMD:LED_0201_0603Metric_Castellated" V 1225 4750 50  0001 C CNN
-F 3 "~" V 1225 4750 50  0001 C CNN
-	1    1225 4750
+P 1250 4750
+F 0 "D2" V 1296 4680 50  0000 R CNN
+F 1 "GREEN" V 1205 4680 50  0000 R CNN
+F 2 "LED_SMD:LED_0201_0603Metric_Castellated" V 1250 4750 50  0001 C CNN
+F 3 "~" V 1250 4750 50  0001 C CNN
+	1    1250 4750
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1275 4600 2    50   Input ~ 0
-LED_STATUS
-Wire Wire Line
-	1225 4600 1225 4650
 $Comp
 L Device:R_Small R3
 U 1 1 5FFAA498
-P 1225 5000
-F 0 "R3" H 1166 4954 50  0000 R CNN
-F 1 "1k" H 1166 5045 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1225 5000 50  0001 C CNN
-F 3 "~" H 1225 5000 50  0001 C CNN
-	1    1225 5000
+P 1250 5000
+F 0 "R3" H 1191 4954 50  0000 R CNN
+F 1 "1k" H 1191 5045 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1250 5000 50  0001 C CNN
+F 3 "~" H 1250 5000 50  0001 C CNN
+	1    1250 5000
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1225 4850 1225 4900
 $Comp
 L power:GND #PWR05
 U 1 1 5FFAD17C
-P 1225 5150
-F 0 "#PWR05" H 1225 4900 50  0001 C CNN
-F 1 "GND" H 1230 4977 50  0000 C CNN
-F 2 "" H 1225 5150 50  0001 C CNN
-F 3 "" H 1225 5150 50  0001 C CNN
-	1    1225 5150
+P 1250 5150
+F 0 "#PWR05" H 1250 4900 50  0001 C CNN
+F 1 "GND" H 1255 4977 50  0000 C CNN
+F 2 "" H 1250 5150 50  0001 C CNN
+F 3 "" H 1250 5150 50  0001 C CNN
+	1    1250 5150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1225 5100 1225 5150
 $Comp
 L Power_Protection:USBLC6-2SC6 U3
 U 1 1 5FEF1F77
-P 5450 5675
-F 0 "U3" H 5725 6025 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 5775 5325 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5450 5175 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 5650 6025 50  0001 C CNN
-	1    5450 5675
+P 5450 5650
+F 0 "U3" H 5725 6000 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 5775 5300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5450 5150 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 5650 6000 50  0001 C CNN
+	1    5450 5650
 	1    0    0    -1  
 $EndComp
 Text Notes 2075 1975 0    50   ~ 0
@@ -355,18 +343,6 @@ F 3 "" H 6150 2500 50  0001 C CNN
 	1    6150 2500
 	1    0    0    -1  
 $EndComp
-Text GLabel 5500 3150 2    50   Input ~ 0
-USB_CONN_D-
-Text GLabel 5500 3350 2    50   Input ~ 0
-USB_CONN_D+
-Text GLabel 5050 5775 0    50   Input ~ 0
-USB_CONN_D-
-Text GLabel 5050 5575 0    50   Input ~ 0
-USB_D-
-Text GLabel 5850 5775 2    50   Input ~ 0
-USB_CONN_D+
-Text GLabel 5850 5575 2    50   Input ~ 0
-USB_D+
 $Comp
 L power:+5V #PWR020
 U 1 1 6016E7D3
@@ -439,10 +415,6 @@ F 3 "" H 800 5150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	800  5100 800  5150
-Text GLabel 5500 3050 2    50   Input ~ 0
-USB_CONN_D-
-Text GLabel 5500 3250 2    50   Input ~ 0
-USB_CONN_D+
 $Comp
 L Device:R_Small R5
 U 1 1 5FF13416
@@ -537,128 +509,34 @@ F 3 "" H 975 2575 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1500 2275 1700 2275
-Text GLabel 2600 5150 0    50   Input ~ 0
-PB15
-Text GLabel 3900 3650 2    50   Input ~ 0
-PA0
-Text GLabel 3900 3750 2    50   Input ~ 0
-PA1
-Text GLabel 3900 4950 2    50   Input ~ 0
-PA13
-Text GLabel 3900 5050 2    50   Input ~ 0
-PA14
-Text GLabel 3900 5150 2    50   Input ~ 0
-PA15
 Wire Wire Line
 	3400 2275 3400 2350
 Wire Wire Line
 	3500 2275 3500 2350
-Text GLabel 3900 4650 2    50   Input ~ 0
-PA10
-Text GLabel 3900 4550 2    50   Input ~ 0
-PA9
-Text GLabel 3900 4450 2    50   Input ~ 0
-PA8
-Text GLabel 3900 4350 2    50   Input ~ 0
-PA7
-Text GLabel 3900 4250 2    50   Input ~ 0
-PA6
-Text GLabel 3900 4150 2    50   Input ~ 0
-PA5
-Text GLabel 3900 4050 2    50   Input ~ 0
-PA4
-Text GLabel 3900 3950 2    50   Input ~ 0
-PA3
-Text GLabel 3900 3850 2    50   Input ~ 0
-PA2
-Text GLabel 7200 2625 0    50   Input ~ 0
-PB10
-Text GLabel 7200 2725 0    50   Input ~ 0
-PB2
-Text GLabel 7200 2825 0    50   Input ~ 0
-PB1
-Text GLabel 7200 2925 0    50   Input ~ 0
-PB0
-Text GLabel 7200 3025 0    50   Input ~ 0
-PA7
-Text GLabel 7200 3125 0    50   Input ~ 0
-PA6
-Text GLabel 7200 3225 0    50   Input ~ 0
-PA5
-Text GLabel 7200 3325 0    50   Input ~ 0
-PA4
-Text GLabel 7200 3425 0    50   Input ~ 0
-PA3
-Text GLabel 7200 3825 0    50   Input ~ 0
-PA0
-Text GLabel 7200 3725 0    50   Input ~ 0
-PA1
-Text GLabel 7200 3625 0    50   Input ~ 0
-PA2
-Text GLabel 7200 4025 0    50   Input ~ 0
-PC15
-Text GLabel 7200 4125 0    50   Input ~ 0
-PC14
-Text GLabel 7200 4225 0    50   Input ~ 0
-PC13
-Text GLabel 8200 3625 2    50   Input ~ 0
-PB11
-Text GLabel 8200 3725 2    50   Input ~ 0
-PB13
-Text GLabel 8200 3825 2    50   Input ~ 0
-PB14
-Text GLabel 8200 3925 2    50   Input ~ 0
-PB15
-Text GLabel 8200 2825 2    50   Input ~ 0
-PA10
-Text GLabel 8200 2725 2    50   Input ~ 0
-PA9
-Text GLabel 8200 2625 2    50   Input ~ 0
-PA8
-Text GLabel 8200 2925 2    50   Input ~ 0
-PA13
-Text GLabel 8200 3025 2    50   Input ~ 0
-PA14
-Text GLabel 8200 3125 2    50   Input ~ 0
-PA15
-Text GLabel 7200 5225 0    50   Input ~ 0
-PB3
-Text GLabel 7200 5125 0    50   Input ~ 0
-PB4
-Text GLabel 7200 5025 0    50   Input ~ 0
-PB5
-Text GLabel 7200 4925 0    50   Input ~ 0
-PB6
-Text GLabel 7200 4825 0    50   Input ~ 0
-PB7
-Text GLabel 7200 4725 0    50   Input ~ 0
-PB8
-Text GLabel 7200 4625 0    50   Input ~ 0
-PB9
 $Comp
 L power:GND #PWR028
 U 1 1 601D6737
-P 7125 2425
-F 0 "#PWR028" H 7125 2175 50  0001 C CNN
-F 1 "GND" H 7000 2375 50  0000 C CNN
-F 2 "" H 7125 2425 50  0001 C CNN
-F 3 "" H 7125 2425 50  0001 C CNN
-	1    7125 2425
+P 7475 2425
+F 0 "#PWR028" H 7475 2175 50  0001 C CNN
+F 1 "GND" H 7350 2375 50  0000 C CNN
+F 2 "" H 7475 2425 50  0001 C CNN
+F 3 "" H 7475 2425 50  0001 C CNN
+	1    7475 2425
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR025
 U 1 1 5FD54027
-P 6875 4425
-F 0 "#PWR025" H 6875 4275 50  0001 C CNN
-F 1 "+5V" H 6875 4575 50  0000 C CNN
-F 2 "" H 6875 4425 50  0001 C CNN
-F 3 "" H 6875 4425 50  0001 C CNN
-	1    6875 4425
+P 7225 4425
+F 0 "#PWR025" H 7225 4275 50  0001 C CNN
+F 1 "+5V" H 7225 4575 50  0000 C CNN
+F 2 "" H 7225 4425 50  0001 C CNN
+F 3 "" H 7225 4425 50  0001 C CNN
+	1    7225 4425
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6875 4425 7200 4425
+	7225 4425 7550 4425
 Wire Wire Line
 	3100 2275 3100 2350
 Wire Wire Line
@@ -666,51 +544,47 @@ Wire Wire Line
 Wire Wire Line
 	3300 2275 3300 2350
 Wire Wire Line
-	8275 4125 8200 4125
+	8625 4125 8550 4125
 $Comp
 L power:GND #PWR031
 U 1 1 5FC10AE3
-P 8275 4175
-F 0 "#PWR031" H 8275 3925 50  0001 C CNN
-F 1 "GND" H 8375 4175 50  0000 C CNN
-F 2 "" H 8275 4175 50  0001 C CNN
-F 3 "" H 8275 4175 50  0001 C CNN
-	1    8275 4175
+P 8625 4175
+F 0 "#PWR031" H 8625 3925 50  0001 C CNN
+F 1 "GND" H 8725 4175 50  0000 C CNN
+F 2 "" H 8625 4175 50  0001 C CNN
+F 3 "" H 8625 4175 50  0001 C CNN
+	1    8625 4175
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7125 2325 7200 2325
+	7475 2325 7550 2325
 $Comp
 L power:+3.3V #PWR027
 U 1 1 5FD45091
-P 7125 2325
-F 0 "#PWR027" H 7125 2175 50  0001 C CNN
-F 1 "+3.3V" H 7000 2325 50  0000 C CNN
-F 2 "" H 7125 2325 50  0001 C CNN
-F 3 "" H 7125 2325 50  0001 C CNN
-	1    7125 2325
+P 7475 2325
+F 0 "#PWR027" H 7475 2175 50  0001 C CNN
+F 1 "+3.3V" H 7350 2325 50  0000 C CNN
+F 2 "" H 7475 2325 50  0001 C CNN
+F 3 "" H 7475 2325 50  0001 C CNN
+	1    7475 2325
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7125 2425 7200 2425
+	7475 2425 7550 2425
 Wire Wire Line
-	8275 4175 8275 4125
+	8625 4175 8625 4125
 $Comp
 L TE_2199119-4:2199119-4 J2
 U 1 1 5FB29E66
-P 7700 4125
-F 0 "J2" H 7700 6192 50  0000 C CNN
-F 1 "2199119-4" H 7700 6101 50  0000 C CNN
-F 2 "TE:TE_2199119-4" H 7700 4125 50  0001 L BNN
-F 3 "" H 7700 4125 50  0001 L BNN
-F 4 "2199119-4" H 7700 4125 50  0001 L BNN "Comment"
-	1    7700 4125
+P 8050 4100
+F 0 "J2" H 8050 6167 50  0000 C CNN
+F 1 "2199119-4" H 8050 6076 50  0000 C CNN
+F 2 "TE:TE_2199119-4" H 8050 4100 50  0001 L BNN
+F 3 "" H 8050 4100 50  0001 L BNN
+F 4 "2199119-4" H 8050 4100 50  0001 L BNN "Comment"
+	1    8050 4100
 	1    0    0    -1  
 $EndComp
-Text GLabel 7200 5925 0    50   Input ~ 0
-M.2_SHIELD
-Wire Wire Line
-	1225 4600 1275 4600
 Wire Notes Line
 	575  4325 575  5425
 Wire Notes Line
@@ -734,14 +608,14 @@ Wire Notes Line
 Text Notes 4425 2000 0    50   ~ 0
 USB-C Connection
 Wire Notes Line
-	6675 6050 8475 6050
+	7025 6050 8825 6050
 Wire Notes Line
-	8475 6050 8475 2000
+	8825 6050 8825 2000
 Wire Notes Line
-	8475 2000 6675 2000
+	8825 2000 7025 2000
 Wire Notes Line
-	6675 2000 6675 6050
-Text Notes 6675 2000 0    50   ~ 0
+	7025 2000 7025 6050
+Text Notes 7025 2000 0    50   ~ 0
 M.2/NGFF Connector
 Text Notes 4425 575  0    50   ~ 0
 Decoupling Capacitors
@@ -756,14 +630,14 @@ Wire Notes Line
 Text Notes 575  2975 0    50   ~ 0
 16Mhz Crystal
 Wire Notes Line
-	6675 950  6675 1800
+	7025 950  7025 1800
 Wire Notes Line
-	6675 1800 7625 1800
+	7025 1800 7975 1800
 Wire Notes Line
-	7625 1800 7625 950 
+	7975 1800 7975 950 
 Wire Notes Line
-	7625 950  6675 950 
-Text Notes 6675 950  0    50   ~ 0
+	7975 950  7025 950 
+Text Notes 7025 950  0    50   ~ 0
 Generate +3.3VA
 Wire Notes Line
 	575  2000 575  2800
@@ -822,30 +696,30 @@ Wire Notes Line
 	575  2000 1875 2000
 Wire Notes Line
 	575  2800 1875 2800
-Text Notes 8575 2425 3    50   ~ 10
+Text Notes 8925 2425 3    50   ~ 10
 PIN ASSOCIATION NOT FINAL. PIN ORDER TO BE DETERMINED BASED ON ROUTING. 
-Text Label 2425 2550 0    50   ~ 0
+Text Label 2375 2550 0    50   ~ 0
 NRST
 Text Label 875  2275 2    50   ~ 0
 BOOT0
-Text Label 2200 3050 0    50   ~ 0
+Text Label 2150 3050 0    50   ~ 0
 HF_XTAL_N
-Text Label 2450 3250 0    50   ~ 0
+Text Label 2400 3250 0    50   ~ 0
 PC3
 Wire Wire Line
-	2450 3250 2600 3250
-Text Label 2200 2950 0    50   ~ 0
+	2400 3250 2600 3250
+Text Label 2150 2950 0    50   ~ 0
 HF_XTAL_P
 Wire Wire Line
-	2600 3050 2200 3050
-Text Label 2350 2750 0    50   ~ 0
+	2600 3050 2150 3050
+Text Label 2300 2750 0    50   ~ 0
 BOOT0
 Wire Wire Line
-	2425 2550 2600 2550
+	2375 2550 2600 2550
 Wire Wire Line
-	2200 2950 2600 2950
+	2150 2950 2600 2950
 Wire Wire Line
-	2350 2750 2600 2750
+	2300 2750 2600 2750
 $Comp
 L MCU_ST_STM32F3:STM32F303CCTx U2
 U 1 1 5FAC8D5C
@@ -857,73 +731,69 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    3300 3850
 	1    0    0    -1  
 $EndComp
-Text Label 2400 3350 0    50   ~ 0
+Text Label 2350 3350 0    50   ~ 0
 PC14
 Wire Wire Line
-	2400 3350 2600 3350
-Text Label 2400 3450 0    50   ~ 0
+	2350 3350 2600 3350
+Text Label 2350 3450 0    50   ~ 0
 PC15
 Wire Wire Line
-	2400 3450 2600 3450
-Text Label 2425 3650 0    50   ~ 0
+	2350 3450 2600 3450
+Text Label 2375 3650 0    50   ~ 0
 PB0
 Wire Wire Line
-	2425 3650 2600 3650
+	2375 3650 2600 3650
 Wire Wire Line
-	2425 3750 2600 3750
-Text Label 2425 3850 0    50   ~ 0
+	2375 3750 2600 3750
+Text Label 2375 3850 0    50   ~ 0
 PB2
 Wire Wire Line
-	2425 3850 2600 3850
-Text Label 2425 3950 0    50   ~ 0
+	2375 3850 2600 3850
+Text Label 2375 3950 0    50   ~ 0
 PB3
 Wire Wire Line
-	2425 3950 2600 3950
-Text Label 2425 4050 0    50   ~ 0
+	2375 3950 2600 3950
+Text Label 2375 4050 0    50   ~ 0
 PB4
 Wire Wire Line
-	2425 4050 2600 4050
-Text Label 2425 4150 0    50   ~ 0
+	2375 4050 2600 4050
+Text Label 2375 4150 0    50   ~ 0
 PB5
 Wire Wire Line
-	2425 4150 2600 4150
-Text Label 2425 4250 0    50   ~ 0
+	2375 4150 2600 4150
+Text Label 2375 4250 0    50   ~ 0
 PB6
 Wire Wire Line
-	2425 4250 2600 4250
-Text Label 2425 4350 0    50   ~ 0
+	2375 4250 2600 4250
+Text Label 2375 4350 0    50   ~ 0
 PB7
 Wire Wire Line
-	2425 4350 2600 4350
-Text Label 2425 4450 0    50   ~ 0
+	2375 4350 2600 4350
+Text Label 2375 4450 0    50   ~ 0
 PB8
 Wire Wire Line
-	2425 4450 2600 4450
-Text Label 2400 4650 0    50   ~ 0
+	2375 4450 2600 4450
+Text Label 2350 4650 0    50   ~ 0
 PB10
 Wire Wire Line
-	2400 4650 2600 4650
-Text Label 2425 4550 0    50   ~ 0
+	2350 4650 2600 4650
+Text Label 2375 4550 0    50   ~ 0
 PB9
 Wire Wire Line
-	2425 4550 2600 4550
-Text Label 2400 4750 0    50   ~ 0
+	2375 4550 2600 4550
+Text Label 2350 4750 0    50   ~ 0
 PB11
 Wire Wire Line
-	2400 4750 2600 4750
-Text Label 2150 4850 0    50   ~ 0
+	2350 4750 2600 4750
+Text Label 2100 4850 0    50   ~ 0
 LED_STATUS
 Wire Wire Line
-	2150 4850 2600 4850
-Text Label 2375 4950 0    50   ~ 0
+	2100 4850 2600 4850
+Text Label 2350 4950 0    50   ~ 0
 PB13
-Wire Wire Line
-	2375 4950 2600 4950
-Text Label 2375 5050 0    50   ~ 0
+Text Label 2350 5050 0    50   ~ 0
 PB14
-Wire Wire Line
-	2375 5050 2600 5050
-Text Label 2425 3750 0    50   ~ 0
+Text Label 2375 3750 0    50   ~ 0
 PB1
 Wire Wire Line
 	975  2575 975  2525
@@ -1250,4 +1120,122 @@ Wire Wire Line
 Wire Wire Line
 	6150 2600 6150 2550
 Connection ~ 6150 2550
+Text Label 6150 5550 2    50   ~ 0
+USB_D+
+Wire Wire Line
+	5850 5550 6150 5550
+Text Label 4750 5550 0    50   ~ 0
+USB_D-
+Wire Wire Line
+	4750 5550 5050 5550
+Text Label 4500 5750 0    50   ~ 0
+USB_CONN_D-
+Wire Wire Line
+	4500 5750 5050 5750
+Text Label 6400 5750 2    50   ~ 0
+USB_CONN_D+
+Wire Wire Line
+	6400 5750 5850 5750
+Text Label 6050 3050 2    50   ~ 0
+USB_CONN_D-
+Wire Wire Line
+	6050 3050 5500 3050
+Text Label 6050 3150 2    50   ~ 0
+USB_CONN_D-
+Wire Wire Line
+	6050 3150 5500 3150
+Text Label 6050 3250 2    50   ~ 0
+USB_CONN_D+
+Wire Wire Line
+	6050 3250 5500 3250
+Text Label 6050 3350 2    50   ~ 0
+USB_CONN_D+
+Wire Wire Line
+	6050 3350 5500 3350
+Text Label 1750 4500 2    50   ~ 0
+LED_STATUS
+Wire Wire Line
+	1750 4500 1250 4500
+Wire Wire Line
+	1250 4500 1250 4650
+Wire Wire Line
+	1250 4850 1250 4900
+Wire Wire Line
+	1250 5100 1250 5150
+Text Label 2350 5150 0    50   ~ 0
+PB15
+Wire Wire Line
+	2350 5150 2600 5150
+Wire Wire Line
+	2350 5050 2600 5050
+Wire Wire Line
+	2350 4950 2600 4950
+Text Label 4100 3650 2    50   ~ 0
+PA0
+Wire Wire Line
+	4100 3650 3900 3650
+Text Label 4100 3750 2    50   ~ 0
+PA1
+Wire Wire Line
+	4100 3750 3900 3750
+Text Label 4100 3850 2    50   ~ 0
+PA2
+Wire Wire Line
+	4100 3850 3900 3850
+Text Label 4100 3950 2    50   ~ 0
+PA3
+Wire Wire Line
+	4100 3950 3900 3950
+Text Label 4100 4050 2    50   ~ 0
+PA4
+Wire Wire Line
+	4100 4050 3900 4050
+Text Label 4100 4150 2    50   ~ 0
+PA5
+Wire Wire Line
+	4100 4150 3900 4150
+Text Label 4100 4250 2    50   ~ 0
+PA6
+Wire Wire Line
+	4100 4250 3900 4250
+Text Label 4100 4350 2    50   ~ 0
+PA7
+Wire Wire Line
+	4100 4350 3900 4350
+Text Label 4100 4450 2    50   ~ 0
+PA8
+Wire Wire Line
+	4100 4450 3900 4450
+Text Label 4100 4550 2    50   ~ 0
+PA9
+Wire Wire Line
+	4100 4550 3900 4550
+Text Label 4150 4650 2    50   ~ 0
+PA10
+Wire Wire Line
+	4150 4650 3900 4650
+Text Label 4250 4750 2    50   ~ 0
+USB_D-
+Wire Wire Line
+	4250 4750 3900 4750
+Text Label 4250 4850 2    50   ~ 0
+USB_D+
+Wire Wire Line
+	4250 4850 3900 4850
+Text Label 4150 4950 2    50   ~ 0
+PA13
+Wire Wire Line
+	4150 4950 3900 4950
+Text Label 4150 5050 2    50   ~ 0
+PA14
+Wire Wire Line
+	4150 5050 3900 5050
+Text Label 4150 5150 2    50   ~ 0
+PA15
+Wire Wire Line
+	4150 5150 3900 5150
+Text Label 7100 5900 0    50   ~ 0
+M.2_SHIELD
+Wire Wire Line
+	7100 5900 7550 5900
 $EndSCHEMATC
