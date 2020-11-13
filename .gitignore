@@ -1,1 +1,9 @@
-*.*bak*
+# General ignores
+*.zip
+
+# Kicad related ignores
+*.bck
+*.sch-bak
+*.kicad_pcb-bak
+pcb-cache.lib
+fp-info-cache
