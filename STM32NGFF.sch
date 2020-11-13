@@ -8,10 +8,10 @@ Title "STM32NGFF Breakout Board"
 Date "2020-11-12"
 Rev "0.1"
 Comp "Open Source Hardware, GNU GPL v3.0 Or Later"
-Comment1 "https://github.com/cyberknet/STM32NGFF"
+Comment1 "Latest version at https://github.com/cyberknet/STM32NGFF"
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Join us on Discord at https://discord.gg/E6ujkUG"
+Comment4 "Created by the members of 33C (fka reindeer pig baboon with mouse accessory)"
 $EndDescr
 Wire Wire Line
 	3400 5400 3300 5400
@@ -414,44 +414,44 @@ Wire Wire Line
 $Comp
 L Device:LED_Small D2
 U 1 1 5FFA3B6D
-P 1250 4700
-F 0 "D2" V 1296 4630 50  0000 R CNN
-F 1 "GREEN" V 1205 4630 50  0000 R CNN
-F 2 "" V 1250 4700 50  0001 C CNN
-F 3 "~" V 1250 4700 50  0001 C CNN
-	1    1250 4700
+P 1225 4750
+F 0 "D2" V 1271 4680 50  0000 R CNN
+F 1 "GREEN" V 1180 4680 50  0000 R CNN
+F 2 "" V 1225 4750 50  0001 C CNN
+F 3 "~" V 1225 4750 50  0001 C CNN
+	1    1225 4750
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1300 4550 2    50   Input ~ 0
+Text GLabel 1275 4600 2    50   Input ~ 0
 LED_STATUS
 Wire Wire Line
-	1250 4550 1250 4600
+	1225 4600 1225 4650
 $Comp
 L Device:R_Small R8
 U 1 1 5FFAA498
-P 1250 4950
-F 0 "R8" H 1191 4904 50  0000 R CNN
-F 1 "1k5" H 1191 4995 50  0000 R CNN
-F 2 "" H 1250 4950 50  0001 C CNN
-F 3 "~" H 1250 4950 50  0001 C CNN
-	1    1250 4950
+P 1225 5000
+F 0 "R8" H 1166 4954 50  0000 R CNN
+F 1 "1k5" H 1166 5045 50  0000 R CNN
+F 2 "" H 1225 5000 50  0001 C CNN
+F 3 "~" H 1225 5000 50  0001 C CNN
+	1    1225 5000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1250 4800 1250 4850
+	1225 4850 1225 4900
 $Comp
 L power:GND #PWR025
 U 1 1 5FFAD17C
-P 1250 5100
-F 0 "#PWR025" H 1250 4850 50  0001 C CNN
-F 1 "GND" H 1255 4927 50  0000 C CNN
-F 2 "" H 1250 5100 50  0001 C CNN
-F 3 "" H 1250 5100 50  0001 C CNN
-	1    1250 5100
+P 1225 5150
+F 0 "#PWR025" H 1225 4900 50  0001 C CNN
+F 1 "GND" H 1230 4977 50  0000 C CNN
+F 2 "" H 1225 5150 50  0001 C CNN
+F 3 "" H 1225 5150 50  0001 C CNN
+	1    1225 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 5050 1250 5100
+	1225 5100 1225 5150
 $Comp
 L Power_Protection:USBLC6-2SC6 U2
 U 1 1 5FEF1F77
@@ -517,53 +517,53 @@ $EndComp
 $Comp
 L Device:LED_Small D1
 U 1 1 601B9F45
-P 825 4700
-F 0 "D1" V 871 4630 50  0000 R CNN
-F 1 "RED" V 780 4630 50  0000 R CNN
-F 2 "" V 825 4700 50  0001 C CNN
-F 3 "~" V 825 4700 50  0001 C CNN
-	1    825  4700
+P 800 4750
+F 0 "D1" V 846 4680 50  0000 R CNN
+F 1 "RED" V 755 4680 50  0000 R CNN
+F 2 "" V 800 4750 50  0001 C CNN
+F 3 "~" V 800 4750 50  0001 C CNN
+	1    800  4750
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3.3V #PWR021
 U 1 1 601BB184
-P 825 4550
-F 0 "#PWR021" H 825 4400 50  0001 C CNN
-F 1 "+3.3V" H 840 4723 50  0000 C CNN
-F 2 "" H 825 4550 50  0001 C CNN
-F 3 "" H 825 4550 50  0001 C CNN
-	1    825  4550
+P 800 4600
+F 0 "#PWR021" H 800 4450 50  0001 C CNN
+F 1 "+3.3V" H 815 4773 50  0000 C CNN
+F 2 "" H 800 4600 50  0001 C CNN
+F 3 "" H 800 4600 50  0001 C CNN
+	1    800  4600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	825  4550 825  4600
+	800  4600 800  4650
 $Comp
 L Device:R_Small R7
 U 1 1 601C2629
-P 825 4950
-F 0 "R7" H 766 4904 50  0000 R CNN
-F 1 "1k" H 766 4995 50  0000 R CNN
-F 2 "" H 825 4950 50  0001 C CNN
-F 3 "~" H 825 4950 50  0001 C CNN
-	1    825  4950
+P 800 5000
+F 0 "R7" H 741 4954 50  0000 R CNN
+F 1 "1k" H 741 5045 50  0000 R CNN
+F 2 "" H 800 5000 50  0001 C CNN
+F 3 "~" H 800 5000 50  0001 C CNN
+	1    800  5000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	825  4800 825  4850
+	800  4850 800  4900
 $Comp
 L power:GND #PWR022
 U 1 1 601C9D6A
-P 825 5100
-F 0 "#PWR022" H 825 4850 50  0001 C CNN
-F 1 "GND" H 830 4927 50  0000 C CNN
-F 2 "" H 825 5100 50  0001 C CNN
-F 3 "" H 825 5100 50  0001 C CNN
-	1    825  5100
+P 800 5150
+F 0 "#PWR022" H 800 4900 50  0001 C CNN
+F 1 "GND" H 805 4977 50  0000 C CNN
+F 2 "" H 800 5150 50  0001 C CNN
+F 3 "" H 800 5150 50  0001 C CNN
+	1    800  5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	825  5050 825  5100
+	800  5100 800  5150
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 603E0F97
@@ -927,16 +927,12 @@ $EndComp
 Text GLabel 7200 5925 0    50   Input ~ 0
 M.2_SHIELD
 Wire Wire Line
-	1250 4550 1300 4550
+	1225 4600 1275 4600
 Wire Notes Line
-	675  4325 675  5425
-Wire Notes Line
-	675  5425 1875 5425
+	575  4325 575  5425
 Wire Notes Line
 	1875 5425 1875 4325
-Wire Notes Line
-	1875 4325 675  4325
-Text Notes 675  4325 0    50   ~ 0
+Text Notes 575  4325 0    50   ~ 0
 Power and MCU Status LEDs
 Wire Notes Line
 	4425 6300 6475 6300
@@ -987,14 +983,10 @@ Wire Notes Line
 Text Notes 6675 950  0    50   ~ 0
 Generate +3.3VA
 Wire Notes Line
-	625  2000 625  2800
-Wire Notes Line
-	625  2800 1875 2800
+	575  2000 575  2800
 Wire Notes Line
 	1875 2800 1875 2000
-Wire Notes Line
-	1875 2000 625  2000
-Text Notes 625  2000 0    50   ~ 0
+Text Notes 575  2000 0    50   ~ 0
 BOOT0 Pulldown (IS THIS RIGHT?)
 Wire Notes Line
 	2075 2000 2075 5625
@@ -1203,4 +1195,14 @@ Wire Notes Line
 	6450 575  6450 1800
 Wire Notes Line
 	4425 575  4425 1800
+Wire Notes Line
+	575  4325 1875 4325
+Wire Notes Line
+	575  5425 1875 5425
+Wire Notes Line
+	575  2000 1875 2000
+Wire Notes Line
+	575  2800 1875 2800
+Text Notes 8575 2425 3    50   ~ 10
+PIN ASSOCIATION NOT FINAL. PIN ORDER TO BE DETERMINED BASED ON ROUTING. 
 $EndSCHEMATC
