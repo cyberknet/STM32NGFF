@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "STM32NGFF Breakout Board"
+Title "STM32NGFF Keyboard Controller"
 Date "2020-11-12"
 Rev "0.1"
 Comp "CERN Open Hardware License - Strongly Reciprocal V2"
