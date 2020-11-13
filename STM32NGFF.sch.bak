@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "STM32NGFF Breakout Board"
 Date "2020-11-12"
-Rev "RevA"
+Rev "0.1"
 Comp "Open Source Hardware, GNU GPL v3.0 Or Later"
 Comment1 "Latest version at https://github.com/cyberknet/STM32NGFF"
 Comment2 ""

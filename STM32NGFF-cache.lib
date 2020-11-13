@@ -100,6 +100,27 @@ X 4 4 0 100 25 D 30 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_Ferrite_Bead_Small
+#
+DEF Device_Ferrite_Bead_Small FB 0 0 N Y 1 F N
+F0 "FB" 75 50 50 H V L CNN
+F1 "Device_Ferrite_Bead_Small" 75 -50 50 H V L CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Inductor_*
+ L_*
+ *Ferrite*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 0 -50 0 -31 N
+P 2 0 1 0 0 35 0 51 N
+P 5 0 1 0 -72 11 -44 59 72 -8 44 -56 -72 11 N
+X ~ 1 0 100 50 D 50 50 1 1 P
+X ~ 2 0 -100 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_LED_Small
 #
 DEF Device_LED_Small D 0 10 N N 1 F N
@@ -143,6 +164,26 @@ A 0 20 20 -899 899 0 1 0 N 0 0 0 40
 A 0 60 20 -899 899 0 1 0 N 0 40 0 80
 X ~ 1 0 100 20 D 50 50 1 1 P
 X ~ 2 0 -100 20 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Polyfuse
+#
+DEF Device_Polyfuse F 0 0 N Y 1 F N
+F0 "F" -100 0 50 V V C CNN
+F1 "Device_Polyfuse" 100 0 50 V V C CNN
+F2 "" 50 -200 50 H I L CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *polyfuse*
+ *PTC*
+$ENDFPLIST
+DRAW
+S -30 100 30 -100 0 1 10 N
+P 2 0 1 0 0 100 0 -100 N
+P 4 0 1 0 -60 100 -60 60 60 -60 60 -100 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -224,22 +265,6 @@ X PF1 6 -700 800 100 R 50 50 1 1 I
 X NRST 7 -700 1300 100 R 50 50 1 1 I
 X VSSA 8 100 -1500 100 U 50 50 1 1 W
 X VDDA 9 200 1500 100 D 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# Mechanical_MountingHole_Pad
-#
-DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
-F0 "H" 0 250 50 H V C CNN
-F1 "Mechanical_MountingHole_Pad" 0 175 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- MountingHole*Pad*
-$ENDFPLIST
-DRAW
-C 0 50 50 0 1 50 N
-X 1 1 0 -100 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
