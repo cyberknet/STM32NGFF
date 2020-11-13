@@ -1,5 +1,6 @@
 # General ignores
 *.zip
+*.bak
 
 # Kicad related ignores
 *.bck
