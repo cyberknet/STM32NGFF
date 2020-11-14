@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name TE_2199119-4)(type Legacy)(uri ${KIPRJMOD}/Libraries/TE.pretty/TE_2199119-4.lib)(options "")(descr ""))
+  (lib (name "Argosy Research")(type Legacy)(uri "${KIPRJMOD}/Libraries/Argosy Research.pretty/Argosy Research.lib")(options "")(descr ""))
 )
