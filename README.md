@@ -9,7 +9,7 @@ Created by the members of 33C (fka reindeer pig baboon with mouse accessory)
 ## Schematic
 ![Keyboard Schematic](https://github.com/cyberknet/STM32NGFF/blob/main/Images/schematic.png?raw=true)
 
-## PCB Front
+## PCB
 ![PCB](https://github.com/cyberknet/STM32NGFF/raw/main/Images/pcb.png)
 
 ## PCB 3D View
