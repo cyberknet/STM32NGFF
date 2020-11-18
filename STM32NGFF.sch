@@ -415,7 +415,7 @@ Wire Notes Line
 Text Notes 550  2000 0    50   ~ 0
 BOOT0 Pulldown
 Text Notes 9300 1575 0    50   ~ 0
-TODO:\n-------\n1. Design electrical circuits (complete)\n2. Choose Components\n3. Select/obtain/create footprints\n4. Create rough PCB layout\n5. Refine PCB Layout\n6. Order prototype\n7. Validate prototype, make PCB adjustments\n8. Order beta samples\n9. Beta test\n10. ....\n11. No profit. In this for the love of the game.
+TODO:\n-------\n1. Design electrical circuits (complete)\n2. Choose Components (complete)\n3. Select/obtain/create footprints (complete)\n4. Create rough PCB layout (complete)\n5. Refine PCB Layout (next on agenda)\n6. Order prototype\n7. Validate prototype, make PCB adjustments\n8. Order beta samples\n9. Beta test\n10. ....\n11. No profit. In this for the love of the game.
 Text Notes 6900 5250 0    50   ~ 0
 5V to 3.3V Conversion Using MIC5205
 Wire Notes Line
