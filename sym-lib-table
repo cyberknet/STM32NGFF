@@ -1,4 +1,6 @@
 (sym_lib_table
   (lib (name TE_2199119-4)(type Legacy)(uri ${KIPRJMOD}/Libraries/TE.pretty/TE_2199119-4.lib)(options "")(descr ""))
-  (lib (name "Argosy Research")(type Legacy)(uri "${KIPRJMOD}/Libraries/Argosy Research.pretty/Argosy Research.lib")(options "")(descr ""))
+  (lib (name Argosy_Research)(type Legacy)(uri "${KIPRJMOD}/Libraries/Argosy Research.pretty/Argosy Research.lib")(options "")(descr ""))
+  (lib (name JST)(type Legacy)(uri ${KIPRJMOD}/Libraries/JST.pretty/S4B-PH-K-S_LF__SN.lib)(options "")(descr ""))
+  (lib (name Type-C)(type Legacy)(uri ${KIPRJMOD}/Libraries/Type-C.pretty/Type-C.lib)(options "")(descr ""))
 )

@@ -1,4 +1,5 @@
 (fp_lib_table
-  (lib (name TE)(type KiCad)(uri ${KIPRJMOD}/Libraries/TE.pretty)(options "")(descr ""))
   (lib (name "Argosy Research")(type KiCad)(uri "${KIPRJMOD}/Libraries/Argosy Research.pretty")(options "")(descr ""))
+  (lib (name JST)(type KiCad)(uri ${KIPRJMOD}/Libraries/JST.pretty)(options "")(descr ""))
+  (lib (name Type-C)(type KiCad)(uri ${KIPRJMOD}/Libraries/Type-C.pretty)(options "")(descr ""))
 )
